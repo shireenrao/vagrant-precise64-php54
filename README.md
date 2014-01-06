@@ -2,15 +2,15 @@
 
 ## Description
 
-This is a basic Vagrant file which will import the vagrant base box which I
-created from my dropbox. 
+This is a basic Vagrant file which will import the vagrant base box I created 
+to setup a LAMP developement environment. 
 
 ## Includes
 
 * Ubuntu Precise 64
 * Apache2
 * php 5.4
-* mysql (root password: 12345)
+* mysql (database root password: 12345)
 * phpmyadmin
 * git
 * vim
