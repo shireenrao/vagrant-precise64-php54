@@ -20,6 +20,13 @@ cookbooks and a bootstrap script to install packages.
 ## Installation
 
 Make sure you have VirtualBox and Vagrant installed. Clone this repository.
+
+    $ git clone https://github.com/shireenrao/vagrant-precise64-php54
+
+Now get all submodule
+
+    $ git submodule init && git submodule update
+
 Then all you have to do is run the following command from within the
 repository.
 
