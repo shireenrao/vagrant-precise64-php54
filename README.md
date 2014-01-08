@@ -2,22 +2,18 @@
 
 ## Description
 
-This is a basic Vagrant file which will import a fully provisioned vagrant
-base box I created to setup a LAMP developement environment. 
+This is a basic Vagrant file which will create a PHP 5.4 LAMP developement environment.
+This uses a combination of ways to provision the VM. It uses both some chef
+cookbooks and a bootstrap script to install packages. 
 
 ## Includes
 
 * Ubuntu Precise 64
 * Apache2
 * php 5.4
-* mysql (database root password: 12345)
+* mysql (database root password: 1234)
 * phpmyadmin
 * composer
-* pear
-* pecl
-* ruby 1.8.7-p358
-* chef
-* puppet
 * git
 * vim
 
@@ -31,6 +27,15 @@ repository.
 
 This will start the VM. Once it boots up, open [http://localhost:8080/](http://localhost:8080/)
 to test it.
+
+You can then login to the VM by running
+
+    $ vagrant ssh
+
+At the VM prompt, now run the postinstall.sh script to install additional tools
+and virtualbox guest additions
+
+    $ sudo ./postinstall.sh
 
 ## WWW 
 
